@@ -1,7 +1,7 @@
 FROM node:22-bookworm-slim
 
-# Install Java (JDK)
-RUN apt-get update && apt-get install -y --no-install-recommends openjdk-21-jdk \
+# Install Java (JDK 17)
+RUN apt-get update && apt-get install -y --no-install-recommends openjdk-17-jdk \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
